@@ -49,7 +49,6 @@ st.write(
 )
 
 tabMain, tabInfo, tabTo_dos = st.tabs(["Main", "Info", "To-do's"])
-# tabMain = st.tabs(["Main"])
 
 with tabInfo:
     st.write("")
@@ -204,24 +203,24 @@ with tabMain:
 
     st.subheader("① Build your dataset")
 
-    # example = pills(
-    #     "",
-    #     [
-    #         "Sci-fi Movies",
-    #         "Animals",
-    #         "Pop Songs",
-    #         "POTUS's Twitter",
-    #         "Blank",
-    #     ],
-    #     [
-    #         "🍿",
-    #         "🐎",
-    #         "🎵",
-    #         "🇺🇸",
-    #         "👻",
-    #     ],
-    #     label_visibility="collapsed",
-    # )
+    example = pills(
+        "",
+        [
+            "Sci-fi Movies",
+            "Animals",
+            "Pop Songs",
+            "POTUS's Twitter",
+            "Blank",
+        ],
+        [
+            "🍿",
+            "🐎",
+            "🎵",
+            "🇺🇸",
+            "👻",
+        ],
+        label_visibility="collapsed",
+    )
     
     example = pills(
         "",
