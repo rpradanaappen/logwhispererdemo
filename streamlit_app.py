@@ -48,117 +48,117 @@ st.write(
     "The AI Driven Error Logging and Analysis"
 )
 
-# tabMain, tabInfo, tabTo_dos = st.tabs(["Main", "Info", "To-do's"])
-tabMain = st.tabs(["Main"])
+tabMain, tabInfo, tabTo_dos = st.tabs(["Main", "Info", "To-do's"])
+# tabMain = st.tabs(["Main"])
 
-# with tabInfo:
-#     st.write("")
-#     st.write("")
+with tabInfo:
+    st.write("")
+    st.write("")
 
-#     st.subheader("🤖 What is GPT-3?")
-#     st.markdown(
-#         "[GPT-3](https://en.wikipedia.org/wiki/GPT-3) is a large language generation model developed by [OpenAI](https://openai.com/) that can generate human-like text. It has a capacity of 175 billion parameters and is trained on a vast dataset of internet text. It can be used for tasks such as language translation, chatbot language generation, and content generation etc."
-#     )
+    st.subheader("🤖 What is GPT-3?")
+    st.markdown(
+        "[GPT-3](https://en.wikipedia.org/wiki/GPT-3) is a large language generation model developed by [OpenAI](https://openai.com/) that can generate human-like text. It has a capacity of 175 billion parameters and is trained on a vast dataset of internet text. It can be used for tasks such as language translation, chatbot language generation, and content generation etc."
+    )
 
-#     st.subheader("🎈 What is Streamlit?")
-#     st.markdown(
-#         "[Streamlit](https://streamlit.io) is an open-source Python library that allows users to create interactive, web-based data visualization and machine learning applications without the need for extensive web development knowledge"
-#     )
+    st.subheader("🎈 What is Streamlit?")
+    st.markdown(
+        "[Streamlit](https://streamlit.io) is an open-source Python library that allows users to create interactive, web-based data visualization and machine learning applications without the need for extensive web development knowledge"
+    )
 
-#     st.write("---")
+    st.write("---")
 
-#     st.subheader("📖 Resources")
-#     st.markdown(
-#         """
-#     - OpenAI
-#         - [OpenAI Playground](https://beta.openai.com/playground)
-#         - [OpenAI Documentation](https://beta.openai.com/docs)    
-#     - Streamlit
-#         - [Documentation](https://docs.streamlit.io/)
-#         - [Gallery](https://streamlit.io/gallery)
-#         - [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)
-#         - [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
-#         - Deploy your apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks 
-#     """
-#     )
+    st.subheader("📖 Resources")
+    st.markdown(
+        """
+    - OpenAI
+        - [OpenAI Playground](https://beta.openai.com/playground)
+        - [OpenAI Documentation](https://beta.openai.com/docs)    
+    - Streamlit
+        - [Documentation](https://docs.streamlit.io/)
+        - [Gallery](https://streamlit.io/gallery)
+        - [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)
+        - [Book](https://www.amazon.com/dp/180056550X) (Getting Started with Streamlit for Data Science)
+        - Deploy your apps using [Streamlit Community Cloud](https://streamlit.io/cloud) in just a few clicks 
+    """
+    )
 
-# with tabTo_dos:
+with tabTo_dos:
 
-#     with st.expander("To-do", expanded=True):
-#         st.write(
-#             """
-#         - [p2] Currently, the results are displayed even if the submit button isn't pressed.
-#         - [p2] There is still an issue with the index where the first element from the JSON is not being displayed.
-#         - [Post Hackathon] To limit the number of API calls and costs, let's cap the maximum number - of results to 5. Alternatively, we can consider removing the free API key.
+    with st.expander("To-do", expanded=True):
+        st.write(
+            """
+        - [p2] Currently, the results are displayed even if the submit button isn't pressed.
+        - [p2] There is still an issue with the index where the first element from the JSON is not being displayed.
+        - [Post Hackathon] To limit the number of API calls and costs, let's cap the maximum number - of results to 5. Alternatively, we can consider removing the free API key.
 
-#         """
-#         )
-#         st.write("")
+        """
+        )
+        st.write("")
 
-#     with st.expander("Done", expanded=True):
-#         st.write(
-#             """
-#         - [p2] Check if the Json file is working
-#         - [p2] On Github, remove any unused images and GIFs.
-#         - [p1] Add that for postgress - localhost is required
-#         - [p2] Rename the CSV and JSON as per the st-pills variable
-#         - [p2] Change the color of the small arrow
-#         - [p1] Adjust the size of the Gifs
-#         - Add a streamlit badge in the `ReadMe` file
-#         - Add the message "Please enter your API key or choose the `Free Key` option."
-#         - Include a `ReadMe` file
-#         - Add a section for the Snowflake credentials
-#         - Remove password from the Python file
-#         - Add screenshots to the `ReadMe` file
-#         - Include forms in the snowflake postgres section
-#         - Remove the hashed code in the Python file
-#         - Include additional information in the 'info' tab
-#         - p1] Fix the download issue by sorting it via session state
-#         - [p1] Make the dataframe from this app editable
-#         - Add more gifs to the app
-#         - Change the color scheme to Snowflake Blue
-#         - Include a section for Snowflake credentials
-#         - Change the colors of the arrows, using this tool (https://lottiefiles.com/lottie-to-gif/convert)
-#         - Try new prompts and implement the best ones
-#         - Add a config file for the color scheme
-#         - Include an option menu using this tool (https://github.com/victoryhb/streamlit-option-menu)
-#         - Display a message when the API key is not provided
-#         - Fix the arrow and rearrange the layout for the API key message
-#         - Check and improve the quality of the prompt output
-#         - Send the app to Tony and upload it to GitHub
-#         - Re-arrange the data on the sidebar
-#         - Change the colors of both gifs to match the overall color scheme
-#         - Add context about the app being part of the snowvation project
-#         - Add a button to convert the data to JSON format
-#         - Include the Snowflake logo
-#         - Add a submit button to block API calls unless pressed
-#         - Add a tab with additional information
-#         - Resize the columns in the st.form section
-#         - Add the ability to add the dataset to Snowflake
-#         - Create a section with pills, showcasing examples
-#         - Change the main emoji
-#         - Change the emoji in the tab (page_icon)
-#         - [INFO] Sort out the issue with credits
+    with st.expander("Done", expanded=True):
+        st.write(
+            """
+        - [p2] Check if the Json file is working
+        - [p2] On Github, remove any unused images and GIFs.
+        - [p1] Add that for postgress - localhost is required
+        - [p2] Rename the CSV and JSON as per the st-pills variable
+        - [p2] Change the color of the small arrow
+        - [p1] Adjust the size of the Gifs
+        - Add a streamlit badge in the `ReadMe` file
+        - Add the message "Please enter your API key or choose the `Free Key` option."
+        - Include a `ReadMe` file
+        - Add a section for the Snowflake credentials
+        - Remove password from the Python file
+        - Add screenshots to the `ReadMe` file
+        - Include forms in the snowflake postgres section
+        - Remove the hashed code in the Python file
+        - Include additional information in the 'info' tab
+        - p1] Fix the download issue by sorting it via session state
+        - [p1] Make the dataframe from this app editable
+        - Add more gifs to the app
+        - Change the color scheme to Snowflake Blue
+        - Include a section for Snowflake credentials
+        - Change the colors of the arrows, using this tool (https://lottiefiles.com/lottie-to-gif/convert)
+        - Try new prompts and implement the best ones
+        - Add a config file for the color scheme
+        - Include an option menu using this tool (https://github.com/victoryhb/streamlit-option-menu)
+        - Display a message when the API key is not provided
+        - Fix the arrow and rearrange the layout for the API key message
+        - Check and improve the quality of the prompt output
+        - Send the app to Tony and upload it to GitHub
+        - Re-arrange the data on the sidebar
+        - Change the colors of both gifs to match the overall color scheme
+        - Add context about the app being part of the snowvation project
+        - Add a button to convert the data to JSON format
+        - Include the Snowflake logo
+        - Add a submit button to block API calls unless pressed
+        - Add a tab with additional information
+        - Resize the columns in the st.form section
+        - Add the ability to add the dataset to Snowflake
+        - Create a section with pills, showcasing examples
+        - Change the main emoji
+        - Change the emoji in the tab (page_icon)
+        - [INFO] Sort out the issue with credits
 
 
 
-#         """
-#         )
-#         st.write("")
+        """
+        )
+        st.write("")
 
-#     with st.expander("Not needed", expanded=True):
-#         st.write(
-#             """
-#             - Check index issue in readcsv (not an issue as I've changed the script)
-#             - Add the mouse gif (doesn't fit)
-#             - Ask Lukas - automatically resize the columns of a DataFrame
-#         """
-#         )
-#         st.write("")
+    with st.expander("Not needed", expanded=True):
+        st.write(
+            """
+            - Check index issue in readcsv (not an issue as I've changed the script)
+            - Add the mouse gif (doesn't fit)
+            - Ask Lukas - automatically resize the columns of a DataFrame
+        """
+        )
+        st.write("")
 
-#     st.write("")
-#     st.write("")
-#     st.write("")
+    st.write("")
+    st.write("")
+    st.write("")
 
 with tabMain:
 
