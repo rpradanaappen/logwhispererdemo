@@ -221,13 +221,6 @@ with tabMain:
         ],
         label_visibility="collapsed",
     )
-    
-    example = pills(
-        "",
-        [],
-        [],
-        label_visibility="collapsed",
-    )
 
     if "counter" not in st.session_state:
         st.session_state.counter = 0
