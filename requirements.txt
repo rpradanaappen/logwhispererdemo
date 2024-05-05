@@ -10,3 +10,4 @@ sqlalchemy
 
 #For Postgres
 psycopg2-binary
+cryptography>=42.0.6 # not directly required, pinned by Snyk to avoid a vulnerability
